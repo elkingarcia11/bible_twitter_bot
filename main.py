@@ -1,12 +1,11 @@
-import random
-from biblejson import get_random_sentence
+                                                                          
+import biblejson
 
 
 
 def main():
-
-import random
-  sentence = get_random_sentence(2)
+  sentence = biblejson.get_random_sentence()
+  print(sentence)
 
 
 if __name__ == "__main__":
