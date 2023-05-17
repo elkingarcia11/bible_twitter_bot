@@ -1,7 +1,6 @@
 # Import the dotenv and os and tweey module
 import dotenv
 import os
-import twitter
 import tweepy
 # Load the environment variables from the .env file
 dotenv.load_dotenv()
