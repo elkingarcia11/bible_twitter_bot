@@ -2,15 +2,40 @@ import json
 import random
 
 # 31103 Verses
-data = []
+books = []
 
-# Load verses data from json file
-with open("t_kjv.json", "r") as f:
-  data = json.load(f)
-resultset = data["resultset"]
-data = resultset["row"]
+# Load verses isaiah from json file
+with open("./assets/isaiah.json", "r") as f:
+  d = json.load(f)
+resultset = d["verses"]
+books.append(resultset)
+
+# Load verses philip from json file
+with open("./assets/philip.json", "r") as f:
+  d = json.load(f)
+resultset = d["verses"]
+books.append(resultset)
+
+# Load verses proverbs from json file
+with open("./assets/proverbs.json", "r") as f:
+  d = json.load(f)
+resultset = d["verses"]
+books.append(resultset)
+
+# Load verses psalms from json file
+with open("./assets/psalms.json", "r") as f:
+  d = json.load(f)
+resultset = d["verses"]
+books.append(resultset)
+
+# Load verses romans from json file
+with open("./assets/romans.json", "r") as f:
+  d = json.load(f)
+resultset = d["verses"]
+books.append(resultset)
 
 # Retrieve a random verse from dataset
 def get_random_sentence():
-  i = random.randint(0, len(data)-1)
-  return data[i]["field"][4]
+  random_book = random.choice(books)
+  random_verse = random.choice(random_book)
+  return random_verse["text"]
