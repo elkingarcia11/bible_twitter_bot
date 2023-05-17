@@ -1,6 +1,4 @@
 import tweepy
-import json
-import biblejson
 
 # Set your Twitter API credentials
 
