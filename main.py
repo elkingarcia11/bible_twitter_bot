@@ -1,11 +1,10 @@
                                                                           
 import biblejson
-
-
+import twitterapi
 
 def main():
   sentence = biblejson.get_random_sentence()
-  print(sentence)
+  twitterapi.tweet_random_sentence(sentence)
 
 
 if __name__ == "__main__":
