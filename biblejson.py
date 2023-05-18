@@ -2,7 +2,7 @@ import json
 import random
 
 # Load verses verses from json file
-with open("./assets/verses.json", "r") as f:
+with open("/app/assets/verses.json", "r") as f:
   data = json.load(f)
 
 # 5202 Verses
