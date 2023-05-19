@@ -1,5 +1,6 @@
 # bible_twitter_bot
-
+## Dependencies
+- pip install --upgrade firebase-admin
 ## Deployment
 
 To install the project, follow these steps:
