@@ -1,8 +1,5 @@
+gitignore
+__pycache__
+keys
 .env
 .DS_Store
-gitignore/*
-__pycache__/
-keys/*
-assets/*
-/assets
-assets

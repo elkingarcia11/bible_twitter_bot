@@ -1,6 +1,6 @@
-import twitterapi
 import time
 import schedule
+import twitterapi
 import cloudfs
 
 def post_tweet():
