@@ -1,10 +1,10 @@
-import biblejson
 import twitterapi
 import time
 import schedule
+import cloudfs
 
 def post_tweet():
-  sentence = biblejson.get_random_sentence()
+  sentence = cloudfs.get_random_document()
   twitterapi.tweet_random_sentence(sentence)
 
 def main():
